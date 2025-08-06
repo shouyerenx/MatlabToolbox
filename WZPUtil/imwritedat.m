@@ -27,7 +27,7 @@
 %       'double'  'real*8'         floating point, 64 bits.
 %       'float64' 'real*8'         floating point, 64 bits.
 %       'complex' 'float32*2'      floating point, 64 bits.
-%   machineformat (default: 'l'):
+%   machineformat (default: 'b'):
 %       'b' for Big-endian ordering (GAMMA) 
 %       'l' for Little-endian ordering
 % 
@@ -48,7 +48,7 @@ if nargin<2
 end
 
 if nargin<3
-    machineformat = 'l'; % machineformat, 'b' for Big-endian ordering(GAMMA) 'l' for Little-endian ordering
+    machineformat = 'b'; % machineformat, 'b' for Big-endian ordering(GAMMA) 'l' for Little-endian ordering
 end
 
 cpx = 2-isreal(matrix);
